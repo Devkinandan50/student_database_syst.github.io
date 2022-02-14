@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'lodinpage.css'%}">
+    </head>
+    
+<body style="background-image:url('{% static 'img/loginimg1.jpg'%}');">
+    <div class="devki">
+    <h1>Login Here</h1>
+
+    <br>
+    <form action="/logindev/" method="POST">  
+          {% csrf_token %} 
+        <!-- post is use for private data if data is not private we also use GET -->
+        <div id="dj">
+            <b>username</b>:    <input type="text" name="unname" placeholder="username"> <br>
+        </div>
+        
+        <div id="vj">
+            <b>password</b>:    <input type="password" name="pass" placeholder="password"> <br>
+        </div>
+        <input class="sj" type="submit" value="login">
+        <input class="nj" type="reset">
+    </div>
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'viewdata.css'%}">
+</head>
+<h3>All data which store in Database</h3>
+<br>
+<!-- this print all rows of data -->
+{{data}}
+<br>
+<br>
+
+<!-- this print whole data using for loop-->
+{% for d in data %}
+{{d.id}}
+{{d.studentname}}
+{{d.studentrollnumber}}
+{{d.studentcollege}}
+{% endfor %}
+
+<!-- data in table form -->
+<br>
+<br>
+<table border="8">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>roll number</th>
+            <th>branch</th>
+            <th>College</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {% for d in data %}
+            <td>{{d.id}}</td>
+            <td>{{d.studentname}}</td>
+            <td>{{d.studentrollnumber}}</td>
+            <td>{{d.studentbranch}}</td>
+            <td>{{d.studentcollege}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

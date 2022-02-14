@@ -1,0 +1,54 @@
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    /* opacity: 0.5; */
+}
+h1{
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 29px auto;
+    color: rgb(218, 240, 25);
+}
+
+.devki{
+    text-align: center;
+    height: 250px;
+    /* background-color: blue; */
+    border: 4px solid red;
+    border-radius: 45px;
+    display: block;
+    width: 33%;
+    margin: 178px auto;    
+}
+
+input{
+    margin: 8px 2px;
+    border-radius: 4px;
+}
+
+#dj{
+    font-size: 21px;
+}
+
+#vj{
+    font-size: 21px;
+}
+
+.sj{
+    font-size: 16px;
+    cursor: pointer;
+}
+.sj:hover, .sj:active{
+    background-color: deeppink;
+}
+
+.nj{
+    font-size: 16px;
+    cursor: pointer;
+}
+.nj:hover, .nj:active{
+    background-color: deeppink;
+}
+::placeholder{
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+body{
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    background-size: 1536px 750px;
+    /* opacity: 0.5; */
+}
+.devk{
+    display: block;
+    border: 3px solid white;
+    width: 63%;
+    margin: 100px 80px;
+    text-align: center;
+    font-size: 19px;
+}
+::placeholder{
+    text-align: center;
+}
+input{
+    margin: 0px 2px;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+.dev1{
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.dev1:hover, .dev1:active{
+    background-color: rgb(231, 255, 20);
+}
+
+.dev2{
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.dev2:hover, .dev2:active{
+    background-color: deeppink;
+}
+h3{
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 0px;
+    margin-top: 25px;
+    color: red;
+}
+.ttt{
+    border-top: 3px solid rgb(201, 16, 238);
+    height: 0px;
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+}

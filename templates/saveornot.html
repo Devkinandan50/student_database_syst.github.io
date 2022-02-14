@@ -1,0 +1,47 @@
+<head>
+    {% load static %}
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    h1{
+        display: block;
+        width: 37%;
+        margin: 20px auto;
+        font-size: 45px;
+        /* text-decoration: underline; */
+        color: white;
+    }
+    .right{
+        text-align: center;
+    }
+    .navbar li a{
+    text-decoration: none;
+    font-size: 35px;
+    color:rgb(209, 211, 85);
+    /* margin: 10px 19px; */
+    /* padding: 0px 80px 0px 12px; */
+
+}
+.navbar{
+    text-align: center;
+}
+.navbar li a:hover, .navbar li a:active{
+    text-decoration: underline;
+    color:red;
+    cursor: pointer;
+}
+
+</style>
+<body>
+    <h1> Your Data Save To Database</h1>
+    <div class="right">
+        <img src="{% static 'img/donesuccessfully.png'%}">
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/viewdata/">Show All Reconds</a></li>
+        </ul>
+      </nav>
+</body>

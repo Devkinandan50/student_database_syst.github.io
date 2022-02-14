@@ -1,0 +1,20 @@
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'deletedata.css'%}">
+</head>
+
+<body style="background-image:url('{% static 'img/deleteimg.jpeg'%}');">
+<form action="/deleteda/" method="POST">  
+    {% csrf_token %} 
+  <!-- post is use for private data if data is not private we also use GET -->
+  <div class="devk">
+  <h3>Delete Data From Database</h3>
+  <div class="rrr">
+    <div class="ttt"></div>
+  </div>
+  <b>Enter id whose Data Delete:</b><input type="number" name="d_id" placeholder="Enter Id">
+  <br>
+  <input class="dev1" type="submit" value="Delete">
+    <input class="dev2" type="reset">
+  </div>
+</body>

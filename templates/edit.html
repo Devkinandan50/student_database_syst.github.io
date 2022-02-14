@@ -1,0 +1,30 @@
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'edit.css'%}">
+</head>
+
+<body style="background-image:url('{% static 'img/updateimg.jpg'%}');">
+
+  <form action="/edit/" method="POST">
+    {% csrf_token %}
+    <!-- post is use for private data if data is not private we also use GET -->
+    <div class="vish">
+      <h1>Update Data</h1>
+      <b>Enter id whose data Update:</b><input type="number" name="s_id" placeholder="Enter id">
+      <br>
+      <br>
+      <div class="rrr">
+        <div class="ttt"></div>
+      </div>
+      <h3>Enter update data</h3>
+      <b>Name:</b><input type="text" name="upname" placeholder="Enter name"> <br>
+      <b>College:</b><input type="text" name="uppass" placeholder="Enter college name"> <br>
+      <b>Roll No:</b><input type="number" name="upnumbe" placeholder="Enter Roll number"> <br>
+      <b>Branch:</b><input type="text" name="upbranch" placeholder="Enter your branch"> <br>
+      <div class="devk">
+        <input class="dev1" type="submit" value="Update">
+        <input class="dev2" type="reset">
+      </div>
+    </div>
+  </form>
+</body>
